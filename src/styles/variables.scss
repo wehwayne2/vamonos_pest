@@ -1,4 +1,24 @@
+// Primary
 $primary-color: #0D6E45;
+$primary-light: #10B981;
+$primary-dark: #065F46;
+
+// Secondary  
 $secondary-color: #FFE81D;
-$font-stack: 'Roboto', sans-serif;
+$secondary-light: #FEF3C7;
+$secondary-dark: #D97706;
+
+// Neutrals
+$black: #111827;
+$gray-dark: #4B5563;
+$gray: #9CA3AF;
+$gray-light: #F3F4F6;
+$white: #FFFFFF;
+
 $border-radius: 12px;
+
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
