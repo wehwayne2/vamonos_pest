@@ -1,10 +1,10 @@
 // Primary
 $primary-color: #0D6E45;
 $primary-light: #10B981;
-$primary-dark: #065F46;
+$primary-dark: #244C24;
 
 // Secondary  
-$secondary-color: #FFE81D;
+$secondary-color: #FFF100;
 $secondary-light: #FEF3C7;
 $secondary-dark: #D97706;
 
@@ -15,7 +15,7 @@ $gray: #9CA3AF;
 $gray-light: #F3F4F6;
 $white: #FFFFFF;
 
-$border-radius: 12px;
+$border-radius: 5px;
 
 @mixin centered {
   display: flex;

@@ -1,5 +1,30 @@
 @use "./styles/fonts.scss";
 @use "./styles/reset.scss";
-@use "./styles/variables.scss";
-@use "./styles/defaults.scss";
+@use "./styles/variables.scss"as *;
+@use "./styles/defaults.scss"as *;
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $black;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.btn{
+  background-color: $primary-dark;
+  color: $secondary-color;
+  font-family: "Heroes Legend Hollow";
+  box-shadow: none;
+  border: none;
+  border-radius: $border-radius;
+  padding: 8px 14px;
+  outline: 0;
+}
