@@ -1,0 +1,15 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/fonts.scss" as *;
+
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to top,
+      $primary-dark 10%,
+      rgba(0,0,0, 0.1) 100%
+    ),
+    url("/images/634857.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
