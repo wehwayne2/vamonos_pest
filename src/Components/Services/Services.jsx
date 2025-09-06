@@ -3,7 +3,6 @@ import "./Services.scss"
 import fumigation from "/images/Underground-Drug-Lab-777x437.webp"
 import pestManagement from "/images/bad.webp"
 import tenting from "/images/rk241j8gohq91.webp"
-import greenSolution from '/images/breaking-bad-hazard-pay-1.webp'
 
 const Services = () => {
   return (
@@ -11,31 +10,24 @@ const Services = () => {
       <div className='service'>
         <img src={fumigation} alt="" />
         <div className='service-description'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
           <h2>Whole-house fumigation</h2>
-          <p>A comprehensive treatment method used to eliminate pests such as termites, bedbugs, or cockroaches from an entire property. The home is sealed and filled with a controlled fumigant gas that penetrates walls, furniture, and hidden spaces to ensure complete eradication of infestations, leaving no hiding places behind.</p>
         </div>
       </div>
       <div className='service'>
         <img src={pestManagement} alt="" />
         <div className='service-description'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bug-off-icon lucide-bug-off"><path d="M12 20v-8" /><path d="M14.12 3.88 16 2" /><path d="M15 7.13V6a3 3 0 0 0-5.14-2.1L8 2" /><path d="M18 12.34V11a4 4 0 0 0-4-4h-1.3" /><path d="m2 2 20 20" /><path d="M21 5a4 4 0 0 1-3.55 3.97" /><path d="M22 13h-3.34" /><path d="M3 21a4 4 0 0 1 3.81-4" /><path d="M6 13H2" /><path d="M7.7 7.7A4 4 0 0 0 6 11v3a6 6 0 0 0 11.13 3.13" /></svg>
           <h2>Integrated pest management (IPM)</h2>
-          <p>A sustainable, science-based approach that combines inspection, monitoring, prevention, and targeted treatment. Instead of relying solely on chemicals, IPM uses a blend of biological, mechanical, and minimal chemical solutions to control pests effectively while reducing risks to people, pets, and the environment.</p>
         </div>
       </div>
       <div className='service'>
         <img src={tenting} alt="" />
         <div className='service-description'>
-          <h2> Residential sealing and tenting</h2>
-          <p>This service focuses on physically protecting the home from pests by identifying and sealing entry points, then tenting the property for thorough treatment when necessary. Tenting creates a controlled environment for fumigation or other pest-control procedures, ensuring pests are addressed from the foundation to the roofline.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle-heart-icon lucide-message-circle-heart"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 5.004 2.224 3 3 0 0 1-.832 2.083l-3.447 3.62a1 1 0 0 1-1.45-.001z" /></svg>
+          <h2>Residential sealing and tenting</h2>
         </div>
       </div>
-      <div className='service'>
-        <img src={greenSolution} alt="" />
-        <div className='service-description'>
-          <h2>Environmentally friendly extermination solutions</h2>
-          <p>Designed for eco-conscious homeowners, these methods use low-toxicity or natural treatments that target pests while minimizing impact on the environment. Examples include botanical-based sprays, heat treatments, and eco-certified products that are safe for children, pets, and sensitive ecosystems.</p>
-        </div>
-      </div>      
     </div>
   )
 }

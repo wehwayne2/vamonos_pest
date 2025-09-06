@@ -4,56 +4,30 @@
 
 .services {
   margin: 3rem auto;
-  max-width: 1200px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+ /*  flex-wrap: wrap; */
   align-items: start;
   justify-content: center;
   gap: 20px;
 
   .service {
-    flex: 1 1 300px;
+    flex: 1 1 500px;
     /* grow | shrink | basis */
-    min-width: 250px;
-    max-width: 400px;
-
-    display: flex;
+    min-width: 150px;
+    max-width: 500px;
+    display: inline-flex;
     flex-direction: column;
 
     img {
       flex: 1;
+      margin: 10px 10px 30px 0px;
       border-radius: $border-radius;
     }
 
-    service-description {
-      flex: 1;
-    }
-  }
-
-  @include respond-min("tablet") {
-    .service {
-      flex-basis: calc(50% - 10px);
-      max-width: calc(50% - 10px);
-    }
-  }
-
-  @include respond-between("mobile", "tablet") {
-    .service {
-      flex-basis: calc(50% - 10px);
-      max-width: calc(50% - 10px);
-      min-width: 200px;
+    .service-description {
+      color: $secondary-light;
     }
   }
 }
 
-@include respond-max("mobile") {
-  .services {
-    gap: 16px;
-
-    .service {
-      flex-basis: 100%;
-      max-width: 100%;
-      min-width: unset;
-    }
-  }
-}

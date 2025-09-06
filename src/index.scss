@@ -37,3 +37,25 @@ a {
   gap: 0.5rem;
   cursor: pointer;
 }
+
+p {
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: "Bitter";
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: $secondary-light;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-family: "Bitter";
+  line-height: 150%;
+  color: $secondary-color;
+  text-shadow: 4px 4px 15px rgba(($primary-dark), 1);
+}
+
+.container {
+  margin: 0 3rem;
+}
