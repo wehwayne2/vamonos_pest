@@ -27,7 +27,7 @@ a {
   font-size: 0.7rem;
   font-family: "Heroes Legend Hollow";
   box-shadow: none;
-  border: solid 1.5px;
+  border: solid 1.5px $secondary-color;
   border-radius: $border-radius;
   padding: 8px 14px;
   outline: 0;
@@ -53,7 +53,6 @@ h2 {
   font-family: "Bitter";
   line-height: 150%;
   color: $secondary-color;
-  text-shadow: 4px 4px 15px rgba(($primary-dark), 1);
 }
 
 .container {
