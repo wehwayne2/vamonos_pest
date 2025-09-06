@@ -5,7 +5,7 @@ import logo from '/icons/vamonos_pest.png'//go up twice
 const Navbar = () => {
   return (
     <nav>
-      <img src={logo} alt="logo" className='logo' />
+      <img src={logo} alt="logo" className='logo'/>
       <ul>
         <li>Home</li>
         <li>About us</li>
