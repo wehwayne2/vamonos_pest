@@ -10,6 +10,7 @@
 body {
   background-color: $primary-dark;
   margin-bottom: 10000px;
+  overflow-x: hidden;
 }
 
 a {
@@ -22,6 +23,7 @@ a {
 .btn {
   background-color: $primary-dark;
   color: $secondary-color;
+  font-size: 0.7rem;
   font-family: "Heroes Legend Hollow";
   box-shadow: none;
   border: solid 1.5px;
