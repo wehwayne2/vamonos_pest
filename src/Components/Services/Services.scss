@@ -1,16 +1,22 @@
 @use "../../styles/variables.scss" as *;
 @use "../../styles/fonts.scss" as *;
+@use "../../styles/defaults.scss" as *;
 
 .services {
-  margin: 80px auto;
-  width: 90%;
+  margin: 3rem auto;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
 
   .service {
+    flex: 1 1 300px;
+    /* grow | shrink | basis */
+    min-width: 250px;
+    max-width: 400px;
+
     display: flex;
     flex-direction: column;
 
@@ -18,8 +24,36 @@
       flex: 1;
       border-radius: $border-radius;
     }
+
     service-description {
       flex: 1;
+    }
+  }
+
+  @include respond-min("tablet") {
+    .service {
+      flex-basis: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  @include respond-between("mobile", "tablet") {
+    .service {
+      flex-basis: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+      min-width: 200px;
+    }
+  }
+}
+
+@include respond-max("mobile") {
+  .services {
+    gap: 16px;
+
+    .service {
+      flex-basis: 100%;
+      max-width: 100%;
+      min-width: unset;
     }
   }
 }

@@ -6,3 +6,21 @@ $breakpoints: (
   "tablet": 768px,
   "desktop": 1024px,
 );
+
+@mixin respond-min($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin respond-max($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin respond-between($min, $max) {
+  @media (min-width: map-get($breakpoints, $min)) and (max-width: map-get($breakpoints, $max)) {
+    @content;
+  }
+}

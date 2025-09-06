@@ -33,10 +33,10 @@ p {
   color: $secondary-light;
 }
 
-  h2 {
-    font-size: 1.3rem;
-    font-family: "Bitter";
-    line-height: 150%;
-    color: $secondary-color;
-    text-shadow: 4px 4px 15px rgba(($primary-dark), 1);
-  }
+h2 {
+  font-size: 1.3rem;
+  font-family: "Bitter";
+  line-height: 150%;
+  color: $secondary-color;
+  text-shadow: 4px 4px 15px rgba(($primary-dark), 1);
+}
