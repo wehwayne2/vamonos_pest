@@ -1,7 +1,7 @@
 @use "./styles/fonts.scss";
 @use "./styles/reset.scss";
-@use "./styles/variables.scss"as *;
-@use "./styles/defaults.scss"as *;
+@use "./styles/variables.scss" as *;
+@use "./styles/defaults.scss" as *;
 
 * {
   box-sizing: border-box;
@@ -12,20 +12,25 @@ body {
   margin-bottom: 10000px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
   line-height: 1;
   cursor: pointer;
 }
 
-.btn{
+.btn {
   background-color: $primary-dark;
   color: $secondary-color;
   font-family: "Heroes Legend Hollow";
   box-shadow: none;
-  border: none;
+  border: solid 1.5px;
   border-radius: $border-radius;
   padding: 8px 14px;
   outline: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
