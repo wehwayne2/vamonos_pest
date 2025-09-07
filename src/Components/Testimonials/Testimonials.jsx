@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./Testimonials.scss"
 import next_icon from "/icons/arrow_forward_24dp_FEF3C7_FILL0_wght400_GRAD0_opsz24.svg"
 import back_icon from "/icons/arrow_back_24dp_FEF3C7_FILL0_wght400_GRAD0_opsz24.svg"
@@ -10,13 +10,29 @@ import lydia from "/images/lydia.webp"
 
 const Testimonials = () => {
 
-  
+  const slider = useRef();
+  let tx = 0;
+
+
+  const slideForward = () => {
+    if(tx > -50){
+      tx -= 25;
+    }
+    slider.current.style.transform = `translateX(${tx}%)`
+  }
+    const slideBackward = () => {
+        if(tx < 0){
+      tx += 25;
+    }
+    slider.current.style.transform = `translateX(${tx}%)`
+  }
 
   return (
     <div className='testimonials'>
-
+      <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
+      <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
       <div className='slider'>
-        <ul>
+        <ul ref={slider}>
           <li>
             <div className='slide'>
               <div className='user-info'>
