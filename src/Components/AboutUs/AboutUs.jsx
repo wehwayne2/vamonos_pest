@@ -3,6 +3,8 @@ import "./AboutUs.scss"
 import HoverVideoPlayer from "react-hover-video-player";
 import aboutVideo from "/videos/Sequence 01_11.mp4"
 import thumbnailImage from "/images/aboutvideo-thumbnail.webp"
+import Title from '../Title/Title';
+
 
 const AboutUs = () => {
   return (
@@ -10,6 +12,7 @@ const AboutUs = () => {
       <div className='about-left'>
         <HoverVideoPlayer
           videoSrc={aboutVideo}
+          className='about-video'
           pausedOverlay={
             <img
               src={thumbnailImage}
@@ -30,6 +33,7 @@ const AboutUs = () => {
         />
       </div>
       <div className='about-right'>
+        <Title subTitle = "Our services" title = "What we offer"/>
         <p>At Vamonos Pest, we provide discreet, professional, and reliable pest control services to residential and commercial clients across New Mexico. Whether you’re dealing with termites, bedbugs, or cockroaches, our experienced technicians use state-of-the-art fumigation technology to make sure your property is pest-free and safe.</p>
         <h3>We specialize in:</h3>
         
