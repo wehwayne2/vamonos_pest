@@ -38,6 +38,10 @@ a {
   cursor: pointer;
 }
 
+.dark-btn {
+  background-color: transparent;
+}
+
 p {
   margin: 20px auto;
   max-width: 800px;
@@ -51,7 +55,7 @@ p {
 h1 {
   font-size: 1.2rem;
   font-family: "Heroes Legend";
-  line-height: 150%;
+  line-height: 180%;
   color: $secondary-color;
 }
 
