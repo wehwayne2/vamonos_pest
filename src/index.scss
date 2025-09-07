@@ -42,7 +42,7 @@ a {
   background-color: transparent;
 }
 
-p {
+span, p {
   margin: 20px auto;
   max-width: 800px;
   font-family: "Bitter";
@@ -61,6 +61,13 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
+  font-family: "Bitter";
+  line-height: 150%;
+  color: $secondary-color;
+}
+
+h3 {
+    font-size: 1.1rem;
   font-family: "Bitter";
   line-height: 150%;
   color: $secondary-color;

@@ -9,16 +9,73 @@ import lydia from "/images/lydia.webp"
 
 
 const Testimonials = () => {
+
+  
+
   return (
     <div className='testimonials'>
-      <img src={next_icon} alt="" className='next-btn'/>
-      <img src={back_icon} alt="" className='back-btn'/>
+
       <div className='slider'>
         <ul>
-          <li></li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={hank} alt="" />
+                <div>
+                  <h3>Hank Schrader</h3>
+                  <span>DEA Agent, Albuquerque</span>
+                </div>
+              </div>
+              <p>
+                I’ve seen a lot of shady operators in my line of work. Vamonos Pest isn’t one of them — they’re clean, professional, and efficient. Would recommend them to anyone.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={lydia} alt="" />
+                <div>
+                  <h3>Lydia Rodarte-Quayle</h3>
+                  <span>Corporate Client</span>
+                </div>
+              </div>
+              <p>
+                My business requires absolute discretion. Vamonos Pest handled the situation flawlessly, and the entire process was invisible to outsiders.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={badger} alt="" />
+                <div>
+                  <h3>Badger(Brandon Mayhew)</h3>
+                  <span>Apartment Residents</span>
+                </div>
+              </div>
+              <p>
+                Yo, man, we had this nasty roach thing going on, right? Vamonos hooked us up. Now the place is fresh. Five stars, no doubt!
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={marie} alt="" />
+                <div>
+                  <h3>Marie Schrader</h3>
+                  <span>Residential Client</span>
+                </div>
+              </div>
+              <p>
+               I can’t stand creepy-crawlies. The Vamonos team showed up right on time, and after they were done, not a single bug in sight. Plus, they were so polite!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
-      
+
     </div>
   )
 }
