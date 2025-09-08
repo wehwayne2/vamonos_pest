@@ -1,0 +1,23 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/fonts.scss" as *;
+@use "../../styles/defaults.scss" as *;
+
+.footer {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $secondary-light;
+
+  p {
+    margin-left: 0;
+  }
+
+  ul li {
+
+    display: inline-block;
+    color: $secondary-light;
+   font-family: "Bitter";
+   margin-left: 20px;
+  }
+}

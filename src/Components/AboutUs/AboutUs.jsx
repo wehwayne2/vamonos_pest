@@ -46,7 +46,6 @@ const AboutUs = () => {
           <li>Residential sealing and tenting</li>
           <li>Green / environmentally friendly extermination solutions</li>
         </ul>
-
       </div>
 
     </div>
