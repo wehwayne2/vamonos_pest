@@ -17,6 +17,7 @@ const App = () => {
         <AboutUs />
         <Title subTitle = "testimonials" title = "What client says"/>
         <Testimonials />
+        <Title subTitle = "contact us" title = "get in touch"/>
       </div>
     </div>
   )

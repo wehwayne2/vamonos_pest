@@ -3,7 +3,7 @@
 @use "../../styles/defaults.scss" as *;
 
 .about {
-  margin: 5rem auto;
+  margin: 13rem auto;
   background-color: rgba($primary-color, 0.2);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
   display: flex;
