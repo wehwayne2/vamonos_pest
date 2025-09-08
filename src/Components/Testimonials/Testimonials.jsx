@@ -13,24 +13,54 @@ const Testimonials = () => {
   const slider = useRef();
   let tx = 0;
 
+  const backBtn = useRef();
+  const fortBtn = useRef();
 
-  const slideForward = () => {
-    if(tx > -50){
-      tx -= 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`
+
+
+const slideForward = () => {
+  if (tx > -75) {
+    tx -= 25;
+    slider.current.style.transform = `translateX(${tx}%)`;
   }
-    const slideBackward = () => {
-        if(tx < 0){
-      tx += 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`
+
+  if (tx === 0) {
+    backBtn.current.style.opacity = "0";
+  } else {
+    backBtn.current.style.opacity = "1";
   }
+
+  if (tx === -75) {
+    fortBtn.current.style.opacity = "0";
+  } else {
+    fortBtn.current.style.opacity = "1";
+  }
+};
+
+
+const slideBackward = () => {
+  if (tx < 0) {
+    tx += 25;
+    slider.current.style.transform = `translateX(${tx}%)`;
+  }
+
+  if (tx === 0) {
+    backBtn.current.style.opacity = "0";
+  } else {
+    backBtn.current.style.opacity = "1";
+  }
+
+  if (tx === -75) {
+    fortBtn.current.style.opacity = "0";
+  } else {
+    fortBtn.current.style.opacity = "1";
+  }
+};
 
   return (
     <div className='testimonials'>
-      <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
-      <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
+      <img ref={fortBtn} src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
+      <img ref={backBtn} src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
       <div className='slider'>
         <ul ref={slider}>
           <li>

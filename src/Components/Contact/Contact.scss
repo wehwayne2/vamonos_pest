@@ -1,0 +1,43 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/fonts.scss" as *;
+@use "../../styles/defaults.scss" as *;
+
+.contact {
+  margin: 80px auto;
+  max-width: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  color: $secondary-light;
+
+  h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  p {
+    max-width: 450px;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: "Bitter";
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: $secondary-light;
+  }
+
+  li {
+    gap: 10px;
+  }
+}
