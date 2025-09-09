@@ -5,12 +5,15 @@
 .footer {
   margin: 10px auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   border-top: 1px solid $secondary-light;
-
+  align-items: center; 
+  font-size: 0.7rem;
+  height: 30px;
   p {
+
     margin-left: 0;
+    font-size: 0.7rem;
   }
 
   ul li {

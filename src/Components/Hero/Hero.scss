@@ -21,6 +21,7 @@
 .hero-text {
   text-align: center;
   max-width: 1000px;//
+  margin: 0 60px;
 
   h1 {
     font-size: 2.5rem;
@@ -28,5 +29,13 @@
     line-height: 200%;
     color: $secondary-color;
     text-shadow: 4px 4px 15px rgba(($primary-dark), 1);
+          @include respond-max("tablet") {
+        font-size: 2rem;
+
+      }
+           @include respond-max("tablet") {
+        font-size: 1.7rem;
+            margin: 0 0px;
+      }
   }
 }

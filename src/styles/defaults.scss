@@ -2,8 +2,7 @@
 
 @forward "../../node_modules/include-media/dist/_include-media.scss";
 
-$breakpoints: (
-  "mobile": 375px,  
+$breakpoints: ( 
   "tablet": 876px,
   "desktop": 1440px,
 );
