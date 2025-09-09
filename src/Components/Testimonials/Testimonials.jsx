@@ -16,8 +16,6 @@ const Testimonials = () => {
   const backBtn = useRef();
   const fortBtn = useRef();
 
-
-
 const slideForward = () => {
   if (tx > -75) {
     tx -= 25;
