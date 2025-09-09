@@ -51,10 +51,9 @@
       overflow-x: hidden;
       transition: 0.5s;
       transform: translateX(0);
-       @include respond-max("tablet") {
-       width: 400%;
-     }
-
+    @media (max-width: 1000px) {
+    width: 400%;
+  }
       li {
         width: 50%;
         padding: 20px;
@@ -68,6 +67,7 @@
           padding: 40px;
            @include respond-max("tablet") {
         padding: 10px;
+       
      }
 
           .user-info {
