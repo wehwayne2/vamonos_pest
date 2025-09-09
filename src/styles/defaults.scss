@@ -3,8 +3,9 @@
 @forward "../../node_modules/include-media/dist/_include-media.scss";
 
 $breakpoints: (
-  "tablet": 768px,
-  "desktop": 1024px,
+  "mobile": 375px,  
+  "tablet": 876px,
+  "desktop": 1440px,
 );
 
 @mixin respond-min($breakpoint) {
@@ -24,3 +25,11 @@ $breakpoints: (
     @content;
   }
 }
+
+ /*  @include respond-min("tablet") {
+    font-size: 16px; // kicks in at >= 768px
+  }
+
+  @include respond-min("desktop") {
+    font-size: 18px; // kicks in at >= 1024px
+  } */
