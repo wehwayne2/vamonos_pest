@@ -2,44 +2,47 @@
 @use "../../styles/fonts.scss" as *;
 @use "../../styles/defaults.scss" as *;
 
+@mixin arrowButton ($rightPos) {
+  position: absolute;
+  top: 50%;
+  right: $rightPos;
+  transform: translate(50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  background-color: $primary-color;
+  border: 1px solid $secondary-light;
+  transition: 0.2s;
+  z-index: 99999;
+  @include respond-max("tablet") {
+    right: $rightPos;
+    transform: translate($rightPos, -50%);
+  }
+
+  @media (max-width: 400px) {
+    width: 30px;
+  }
+}
+
 .testimonials {
   margin: 80px auto;
-  padding: 0 80px;
+  padding: 0 25px;
   position: relative;
      @include respond-max("tablet") {
         padding: 0 40px;
      }
 
-  .next-btn,
-  .back-btn {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 5px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: $primary-color;
-    border: 1px solid $secondary-light;
-    transition: 0.2s;
-           @include respond-max("tablet") {
-       right: -5%;
-     }
-    
-  }
-
-  .back-btn {
-    right: auto; ///
-    left: 0; ///
-    opacity: 1;
-               @include respond-max("tablet") {
-      left: -5%;
-     }
-  }
-
   .next-btn {
-    opacity: 1;
+    @include arrowButton(0%)
+  }
+
+  .back-btn {
+    @include arrowButton(100%)
   }
 
   .slider {
@@ -47,28 +50,38 @@
 
     ul {
       display: flex;
-      width: 200%;
-      overflow-x: hidden;
+      align-items: center;
+      flex: 1;
+
+      //there were width: 200%)))
+
       transition: 0.5s;
-      transform: translateX(0);
-    @media (max-width: 1000px) {
-    width: 400%;
-  }
+      
+      // @media (max-width: 1000px) {
+      //   width: 400%;
+      // }
+
+
+      // i just commented the code above so you can laugh of it once you smart, do not remove it
+
+
       li {
-        width: 50%;
+        flex: 0 0 50%;
         padding: 20px;
- @include respond-max("tablet") {
-        padding: 10px;
-        width: 100%
-     }
+
+        @include respond-max("tablet") {
+          padding: 10px;
+          flex: 0 0 100%;
+        }
+
         .slide {
           box-shadow: 0 0 20px $primary-color;
           border-radius: $border-radius;
-          padding: 40px;
-           @include respond-max("tablet") {
-        padding: 10px;
-       
-     }
+          padding: 25px;
+
+          @include respond-max("tablet") {
+            padding: 10px;
+          }
 
           .user-info {
             display: flex;
@@ -79,16 +92,19 @@
               margin-right: 10px;
               margin-bottom: 15px;
               border: 2px solid $primary-color;
-               @include respond-max("tablet") {
-width: 70px;
-height: 70px;
-     }
+
+              @include respond-max("tablet") {
+                width: 70px;
+                height: 70px;
+              }
             }
           }
-
-
         }
       }
     }
+  }
+
+  @media (max-width: 400px) {
+    padding: 0;
   }
 }
